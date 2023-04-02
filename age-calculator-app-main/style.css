@@ -1,0 +1,110 @@
+/* The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px */
+
+/* ## Colors
+
+### Primary
+
+- Purple: hsl(259, 100%, 65%)
+- Light red: hsl(0, 100%, 67%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Off white: hsl(0, 0%, 94%)
+- Light grey: hsl(0, 0%, 86%)
+- Smokey grey: hsl(0, 1%, 44%)
+- Off black: hsl(0, 0%, 8%)
+
+## Typography
+
+### Body Copy
+
+- Font size (inputs): 32px
+
+### Font
+
+- Family: 
+- Weights: 400i, 700, 800i */
+
+
+body {
+    background-color: hsl(0, 1%, 86%);
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.mainBox {
+    background-color: white;
+    /* height: 400px; */
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px 15px 150px 15px;
+}
+
+button {
+    width: 20%;
+    margin: 10px;
+}
+
+.columnInputs {
+    display: flex;
+    flex-direction: column;
+}
+input {
+    margin: 5px 0;
+    width: 35%;
+    padding: 17px;
+    border-radius: 0.3rem;
+}
+
+img {
+    background-color: hsl(259, 100%, 65%);
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    padding: 10px;
+}
+
+.dates {
+    margin: 10px;
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+}
+
+.dash {
+    color: hsl(259, 100%, 65%);
+    margin: 0 5px;
+}
+
+.inputArea {
+    border-bottom: 1px solid hsl(0, 1%, 44%);
+    display: flex;
+    flex-direction: row;
+    margin: 20px 10px;
+    padding: 20px;
+}
+
+input:hover{
+    border-color: hsl(259, 100%, 65%);
+}
+
+.error {
+    border-color: #ff3860;
+    font-size: 1rem;
+    color: red;
+}
