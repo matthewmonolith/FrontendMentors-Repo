@@ -57,6 +57,12 @@ function calcAge() {
         document.querySelector('.dayError').innerText = 'day must be a valid day'
     }
 
+    if(inputDay > 28 && inputMonth === '2'){
+        document.querySelector('#day').classList.add('error')
+        document.querySelector('.dayError').innerText = 'day must be a valid day'
+    }
+
+
     if(inputDay > day){
         day = day + monthsArr[month - 1];
         month = month - 1
