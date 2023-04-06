@@ -15,12 +15,15 @@ function calcAge() {
     if(!inputYear){
         document.querySelector('#year').classList.add('error')
         document.querySelector('.yearError').innerText = 'This field is required'
-    }
-    
-    if(inputYear > year){
+    }else if(inputYear > year){
         document.querySelector('#year').classList.add('error')
         document.querySelector('.yearError').innerText = 'Year must be in the past'
-    } 
+    } else {
+        let yearDiff = year - inputYear;
+        document.querySelector('.yearNum').innerText = yearDiff;
+        document.querySelector('#year').classList.remove('error')
+        document.querySelector('.yearError').innerText = ''
+    }
 
 
 
@@ -61,12 +64,12 @@ function calcAge() {
 
     let dayDiff = day - inputDay;
     let monthDiff = month - inputMonth;
-    let yearDiff = year - inputYear;
+
 
 
     document.querySelector('.dayNum').innerText = dayDiff
     document.querySelector('.monthNum').innerText = monthDiff
-    document.querySelector('.yearNum').innerText = yearDiff;
+
 }
 
 
